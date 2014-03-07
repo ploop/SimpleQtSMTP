@@ -16,7 +16,7 @@ Simple example:
 MIMEmessage message;
 
 // 2. Set sender, add recipients, set subject
-message.setSender(My name <myemail.example.com>);
+message.setSender("My name <myemail.example.com>");
 message.addRcpt("Jon Smitt <jon@test.com>");
 message.addRcpt("mary@test.com");
 message.setSubject("Test subject");
