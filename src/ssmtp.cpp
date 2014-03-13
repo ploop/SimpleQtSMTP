@@ -72,6 +72,7 @@ QString SSMTP::getLog()
 
 bool SSMTP::send(MIMEmessage *message)
 {
+  log.clear();
   int mSize = message->getMIMEText().toLatin1().size();
   /* calc timeout for slowly 56 kbps connection */
   messageRespTimeout = (mSize / (56000/8)) * 1000;
