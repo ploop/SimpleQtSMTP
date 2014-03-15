@@ -192,7 +192,7 @@ const QString MIMEmessage::getMIMEText()
   output.append(attach);
 
   output.append("\r\n--" + mainBoundary + "--");
-  output.append("\r\r\n");
+  output.append("\r\n");
   return output;
 }
 
